@@ -184,6 +184,10 @@ h2.head{font-family:var(--ff-disp);font-weight:600;font-size:clamp(25px,3.4vw,46
 .pieces{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
 @media(max-width:900px){.pieces{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:560px){.pieces{grid-template-columns:1fr}}
+.pieces.stand{grid-template-columns:repeat(3,1fr)}
+@media(max-width:900px){.pieces.stand{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:560px){.pieces.stand{grid-template-columns:1fr}}
+.pieces.stand .pimg{height:clamp(130px,20vh,200px);background-color:#0f0f11}
 .piece{border:1px solid var(--line);border-radius:13px;overflow:hidden;background:rgba(255,255,255,.02);transition:.35s var(--ease);cursor:none;display:flex;flex-direction:column}
 .piece:hover{transform:translateY(-4px);border-color:rgba(201,255,61,.45);box-shadow:0 18px 30px -22px rgba(0,0,0,.8)}
 .piece .pimg{position:relative;height:clamp(120px,15vh,168px);background-color:#f4f1ea;background-position:center;background-repeat:no-repeat;background-size:contain}
@@ -479,12 +483,40 @@ h2.head{font-family:var(--ff-disp);font-weight:600;font-size:clamp(25px,3.4vw,46
 </section>
 
 <!-- 11 STAND FOGATTI -->
-<section class="slide kv fog" data-act="DESIGN · FOGATTI · STAND">
-  <div class="kvtop">
-    <span class="kicker fog" style="margin-bottom:0">Stand · Fogatti</span>
-    <span class="logo fog" style="font-size:18px"><span class="mk"></span>FOGATTI</span>
+<section class="slide" data-act="DESIGN · FOGATTI · STAND">
+  <div class="slide-inner">
+    <span class="kicker fog rv">Stand · Fogatti</span>
+    <h2 class="head rv d1" style="max-width:28ch">O stand completo, em todos os ângulos</h2>
+    <div class="gwrap rv d2">
+      <div class="pieces stand" data-brand="Stand Fogatti">
+        <div class="piece" data-img="img/stand-fogatti.jpg" data-name="Fachada principal" data-util="Vista frontal do stand com testeira FOGATTI, parede viva e sinalização de rua">
+          <div class="pimg" style="background-image:url('img/stand-fogatti.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Fachada principal</div><div class="putil">Testeira FOGATTI, parede viva e sinalização de rua</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-fog-2.jpg" data-name="Volume e testeira" data-util="Ângulo 3/4 destacando a arquitetura do stand e o letreiro suspenso Tecnologia que Inspira">
+          <div class="pimg" style="background-image:url('img/stand-fog-2.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Volume e testeira</div><div class="putil">Arquitetura e letreiro suspenso da marca</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-fog-3.jpg" data-name="Ilha de demonstração" data-util="Bancada de cocção e ambientação interna, com produtos em contexto de uso">
+          <div class="pimg" style="background-image:url('img/stand-fog-3.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Ilha de demonstração</div><div class="putil">Bancada de cocção e ambientação interna</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-fog-4.jpg" data-name="Lounge e atendimento" data-util="Área de estar e balcão de relacionamento para receber o cliente">
+          <div class="pimg" style="background-image:url('img/stand-fog-4.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Lounge e atendimento</div><div class="putil">Área de estar e balcão de relacionamento</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-fog-5.jpg" data-name="Balcão gourmet" data-util="Parede viva e bancada de experiência com o produto em destaque">
+          <div class="pimg" style="background-image:url('img/stand-fog-5.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Balcão gourmet</div><div class="putil">Parede viva e bancada de experiência</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-fog-6.jpg" data-name="Cocção ao vivo" data-util="Demonstração do produto em uso na bancada, com o shopper vivendo a experiência">
+          <div class="pimg" style="background-image:url('img/stand-fog-6.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Cocção ao vivo</div><div class="putil">Demonstração do produto em uso na bancada</div></div>
+        </div>
+      </div>
+      <div class="gnote"><span style="color:var(--fog)">clique em qualquer ângulo para ver em tela cheia e alta resolução</span></div>
+    </div>
   </div>
-  <div class="kvstage" style="background-image:url('img/stand-fogatti.jpg')"></div>
 </section>
 
 <!-- 12 KV NARDELLI -->
@@ -547,12 +579,40 @@ h2.head{font-family:var(--ff-disp);font-weight:600;font-size:clamp(25px,3.4vw,46
 </section>
 
 <!-- 14 STAND NARDELLI -->
-<section class="slide kv nar" data-act="DESIGN · NARDELLI · STAND">
-  <div class="kvtop">
-    <span class="kicker nar" style="margin-bottom:0">Stand · Nardelli</span>
-    <span class="logo nar" style="font-size:18px">NARDELLI</span>
+<section class="slide" data-act="DESIGN · NARDELLI · STAND">
+  <div class="slide-inner">
+    <span class="kicker nar rv">Stand · Nardelli</span>
+    <h2 class="head rv d1" style="max-width:28ch">O stand completo, em todos os ângulos</h2>
+    <div class="gwrap rv d2">
+      <div class="pieces stand" data-brand="Stand Nardelli">
+        <div class="piece" data-img="img/stand-nardelli.jpg" data-name="Fachada principal" data-util="Vista frontal vermelha com painel EQUILÍBRIO, ilha central e sinalização de rua">
+          <div class="pimg" style="background-image:url('img/stand-nardelli.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Fachada principal</div><div class="putil">Painel EQUILÍBRIO, ilha central e sinalização</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-nar-2.jpg" data-name="Testeira NARDELLI" data-util="Letreiro e volume da marca em destaque na avenida do evento">
+          <div class="pimg" style="background-image:url('img/stand-nar-2.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Testeira NARDELLI</div><div class="putil">Letreiro e volume da marca em destaque</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-nar-3.jpg" data-name="Esquina da marca" data-util="Vista de esquina com o painel EQUILÍBRIO e a exposição de produtos">
+          <div class="pimg" style="background-image:url('img/stand-nar-3.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Esquina da marca</div><div class="putil">Painel EQUILÍBRIO e exposição de produtos</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-nar-4.jpg" data-name="Exposição de produtos" data-util="Prateleiras e cooktops em destaque, com leitura clara do portfólio">
+          <div class="pimg" style="background-image:url('img/stand-nar-4.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Exposição de produtos</div><div class="putil">Prateleiras e cooktops em destaque</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-nar-5.jpg" data-name="Painel EQUILÍBRIO" data-util="Parede conceito com nichos de produto e ícones de benefício da marca">
+          <div class="pimg" style="background-image:url('img/stand-nar-5.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Painel EQUILÍBRIO</div><div class="putil">Parede conceito com nichos e benefícios</div></div>
+        </div>
+        <div class="piece" data-img="img/stand-nar-6.jpg" data-name="Ilha e ambientação" data-util="Bancada, coifa e TV de conteúdo no coração do stand">
+          <div class="pimg" style="background-image:url('img/stand-nar-6.jpg')"><span class="zoom"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M16 16l5 5M11 8v6M8 11h6"/></svg></span></div>
+          <div class="pmeta"><div class="pname">Ilha e ambientação</div><div class="putil">Bancada, coifa e TV de conteúdo</div></div>
+        </div>
+      </div>
+      <div class="gnote"><span style="color:var(--nar)">clique em qualquer ângulo para ver em tela cheia e alta resolução</span></div>
+    </div>
   </div>
-  <div class="kvstage" style="background-image:url('img/stand-nardelli.jpg')"></div>
 </section>
 
 <!-- 15 PRODUÇÃO KITS -->
@@ -698,7 +758,7 @@ function showLB(idx){
   const el=curGallery[curIdx];
   lbImg.src=el.dataset.img;
   const t=el.dataset.tier;
-  lbName.innerHTML=el.dataset.name+' <span class="bdg" style="background:'+tierCol[t]+'">'+tierName[t]+'</span>';
+  lbName.innerHTML=el.dataset.name+(t?' <span class="bdg" style="background:'+tierCol[t]+'">'+tierName[t]+'</span>':'');
   lbUtil.textContent=el.dataset.util;
   lbCur.textContent=curIdx+1;lbTot.textContent=curGallery.length;lbBrand.textContent=curBrand;
 }
